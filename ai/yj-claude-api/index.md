@@ -7,7 +7,7 @@
 
 - 请求方式：POST
 - Body体参考：
-  ```
+  ```json
    {
       model: "claude-3-5-sonnet-20241022",
       messages: [
