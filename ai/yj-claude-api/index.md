@@ -1,8 +1,6 @@
 ## 云加Claude AI Chat API
 
 
-> api host: http://ai-chat-control.yh-s4.icepoint.io
-
 ### 1. AI对话接口: /claude/chat-process
 
 - 请求方式：POST
@@ -13,11 +11,11 @@
     "messages": [
       {
         "role": "user",
-        "content": `你好,你可以做什么？`,
+        "content": "你好,你可以做什么？",
       },
       {
         "role": "assistant",
-        "content": `你好！\n\n作为一名高级程序员助手，我可以帮你完成多种编程相关的任务，....`,
+        "content": "你好！\n\n作为一名高级程序员助手，我可以帮你完成多种编程相关的任务，....",
       },
       ......  
     ],
