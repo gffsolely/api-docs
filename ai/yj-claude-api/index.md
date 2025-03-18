@@ -9,19 +9,19 @@
 - Body体参考：
   ```json
   {
-    model: "claude-3-5-sonnet-20241022",
-    messages: [
+    "model": "claude-3-5-sonnet-20241022",
+    "messages": [
       {
-        role: "user",
-        content: `你好,你可以做什么？`,
+        "role": "user",
+        "content": `你好,你可以做什么？`,
       },
       {
-        role: "assistant",
-        content: `你好！\n\n作为一名高级程序员助手，我可以帮你完成多种编程相关的任务，....`,
+        "role": "assistant",
+        "content": `你好！\n\n作为一名高级程序员助手，我可以帮你完成多种编程相关的任务，....`,
       },
       ......  
     ],
-    system: "你是一个高级程序员，可以开发java、python、nodejs等多种语言的程序。",
+    "system": "你是一个高级程序员，可以开发java、python、nodejs等多种语言的程序。",
   }
   ```
   > 说明：发送单条对话时只需要发送  role 为 "user"的消息体,<br /> 需要关联上下文时，把历史对话消息都带入到messages列表中，列表最后的一个user消息体为最新的提问
