@@ -26,7 +26,7 @@
 
 - 示例代码（JavaScript）
 
-  ```
+  ```javascript
   axios
     .post("http://xxx/claude/chat-process", {
       model: "claude-3-5-sonnet-20241022",
@@ -70,7 +70,7 @@
 - Body体参考：(同上)
 - 示例代码（JavaScript）
 
-  ```
+  ```javascript
    axios
     .post(
       "http://xxx/claude/chat-stream",
