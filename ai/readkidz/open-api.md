@@ -6,7 +6,7 @@ Readkidz API
 - 说明：以下接口示例使用 JavaScript 语法
 - 请求头（Default）:
     - 'Content-Type': 'application/json'
-    - 'Authorization': 'Bearer <api-key>'
+    - 'Authorization': 'Bearer {api-key}'
 
 
 ## 图像克隆
@@ -18,7 +18,7 @@ Readkidz API
 - 请求方式：GET
 - 请求头:
     - 'Content-Type': 'application/json'
-    - 'Authorization': 'Bearer <api-key>'
+    - 'Authorization': 'Bearer {api-key}'
 - Url query 参数：
     - pageSize: 20  //每页数量  默认：20  最大值:200
     - page: 1  //当前页号  默认：1
@@ -50,7 +50,7 @@ Readkidz API
 - 请求方式：POST
 - 请求头:
     - 'Content-Type': 'application/json'
-    - 'Authorization': 'Bearer <api-key>'
+    - 'Authorization': 'Bearer {api-key}'
 - 请求体：
     ```json
     {
@@ -81,7 +81,7 @@ Readkidz API
 - 请求方式：GET
 - 请求头:
     - 'Content-Type': 'application/json'
-    - 'Authorization': 'Bearer <api-key>'
+    - 'Authorization': 'Bearer {api-key}'
 - 响应体：
     ```json
     {
