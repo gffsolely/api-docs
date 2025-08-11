@@ -73,6 +73,25 @@ Readkidz API
     ```
     > 说明：code值非200时，有对应的msg说明
 - 请求失败： 参考消息体msg说明
+- 示例代码（JavaScript）
+    ```javascript
+    async function getCloneTask() {
+      const postData = JSON.stringify({
+        styleId: "xxx",
+        referImageUrl: "http://xxx.com/1.png",
+        callbackUrl: "http://xxx.com/job-result",
+      });
+      const data = await axios.post("{host}/v1/image/clone", postData, {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "{apiKey}",
+        },
+      });
+      console.log(data);
+    }
+    
+    getCloneTask();
+    ```
 
 ### 3.查询任务信息  
 
