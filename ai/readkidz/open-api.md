@@ -121,7 +121,7 @@ Readkidz API
     >  说明：code值非200时，有对应的msg说明
 - 请求失败： 参考消息体msg说明
 
-### 4. 克隆场景 (待定 开发中)
+### 4. 克隆场景
 - 接口: /v1/image/clone/scene
 - 请求方式：POST
 - 请求头:
@@ -131,8 +131,9 @@ Readkidz API
     ```json
     {
         "styleId":"xxxx",                        //必填，风格ID 
-    	"referImageUrl": "http://xxx.com/1.png", //必填，参考图像url
-    	"prompt": "xxx",                         //必填，场景提示词文本 
+    	"referImageUrl": "http://xxx.com/1.png", //必填；参考图像url
+    	"prompt": "xxx",                         //必填；场景提示词文本
+    	"ow":100,                                //图片参考权重 取值范围内1 - 1000   默认 100
     	"aspectRatio": "1:1",                    //生成图片的比例 默认1:1  取值[1:1,2:1,4:3,16:9]
     	"callbackUrl": "http://xxx.com/callback-url"  //回调接口，业务方接收任务完成数据（也可以通过查询任务信息接口获取结果），
     }
